@@ -1,27 +1,25 @@
 <component name="libraryTable">
   <library name="Dart SDK">
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/../../../../tools/dart-sdk-210/lib/async" />
-      <root url="file://$PROJECT_DIR$/../../../../tools/dart-sdk-210/lib/cli" />
-      <root url="file://$PROJECT_DIR$/../../../../tools/dart-sdk-210/lib/collection" />
-      <root url="file://$PROJECT_DIR$/../../../../tools/dart-sdk-210/lib/convert" />
-      <root url="file://$PROJECT_DIR$/../../../../tools/dart-sdk-210/lib/core" />
-      <root url="file://$PROJECT_DIR$/../../../../tools/dart-sdk-210/lib/developer" />
-      <root url="file://$PROJECT_DIR$/../../../../tools/dart-sdk-210/lib/ffi" />
-      <root url="file://$PROJECT_DIR$/../../../../tools/dart-sdk-210/lib/html" />
-      <root url="file://$PROJECT_DIR$/../../../../tools/dart-sdk-210/lib/indexed_db" />
-      <root url="file://$PROJECT_DIR$/../../../../tools/dart-sdk-210/lib/io" />
-      <root url="file://$PROJECT_DIR$/../../../../tools/dart-sdk-210/lib/isolate" />
-      <root url="file://$PROJECT_DIR$/../../../../tools/dart-sdk-210/lib/js" />
-      <root url="file://$PROJECT_DIR$/../../../../tools/dart-sdk-210/lib/js_util" />
-      <root url="file://$PROJECT_DIR$/../../../../tools/dart-sdk-210/lib/math" />
-      <root url="file://$PROJECT_DIR$/../../../../tools/dart-sdk-210/lib/mirrors" />
-      <root url="file://$PROJECT_DIR$/../../../../tools/dart-sdk-210/lib/svg" />
-      <root url="file://$PROJECT_DIR$/../../../../tools/dart-sdk-210/lib/typed_data" />
-      <root url="file://$PROJECT_DIR$/../../../../tools/dart-sdk-210/lib/wasm" />
-      <root url="file://$PROJECT_DIR$/../../../../tools/dart-sdk-210/lib/web_audio" />
-      <root url="file://$PROJECT_DIR$/../../../../tools/dart-sdk-210/lib/web_gl" />
-      <root url="file://$PROJECT_DIR$/../../../../tools/dart-sdk-210/lib/web_sql" />
+      <root url="file://$USER_HOME$/OneDrive - NTV skólinn/Downloads/dartsdk-windows-x64-release/dart-sdk/lib/async" />
+      <root url="file://$USER_HOME$/OneDrive - NTV skólinn/Downloads/dartsdk-windows-x64-release/dart-sdk/lib/cli" />
+      <root url="file://$USER_HOME$/OneDrive - NTV skólinn/Downloads/dartsdk-windows-x64-release/dart-sdk/lib/collection" />
+      <root url="file://$USER_HOME$/OneDrive - NTV skólinn/Downloads/dartsdk-windows-x64-release/dart-sdk/lib/convert" />
+      <root url="file://$USER_HOME$/OneDrive - NTV skólinn/Downloads/dartsdk-windows-x64-release/dart-sdk/lib/core" />
+      <root url="file://$USER_HOME$/OneDrive - NTV skólinn/Downloads/dartsdk-windows-x64-release/dart-sdk/lib/developer" />
+      <root url="file://$USER_HOME$/OneDrive - NTV skólinn/Downloads/dartsdk-windows-x64-release/dart-sdk/lib/ffi" />
+      <root url="file://$USER_HOME$/OneDrive - NTV skólinn/Downloads/dartsdk-windows-x64-release/dart-sdk/lib/html" />
+      <root url="file://$USER_HOME$/OneDrive - NTV skólinn/Downloads/dartsdk-windows-x64-release/dart-sdk/lib/indexed_db" />
+      <root url="file://$USER_HOME$/OneDrive - NTV skólinn/Downloads/dartsdk-windows-x64-release/dart-sdk/lib/io" />
+      <root url="file://$USER_HOME$/OneDrive - NTV skólinn/Downloads/dartsdk-windows-x64-release/dart-sdk/lib/isolate" />
+      <root url="file://$USER_HOME$/OneDrive - NTV skólinn/Downloads/dartsdk-windows-x64-release/dart-sdk/lib/js" />
+      <root url="file://$USER_HOME$/OneDrive - NTV skólinn/Downloads/dartsdk-windows-x64-release/dart-sdk/lib/js_util" />
+      <root url="file://$USER_HOME$/OneDrive - NTV skólinn/Downloads/dartsdk-windows-x64-release/dart-sdk/lib/math" />
+      <root url="file://$USER_HOME$/OneDrive - NTV skólinn/Downloads/dartsdk-windows-x64-release/dart-sdk/lib/mirrors" />
+      <root url="file://$USER_HOME$/OneDrive - NTV skólinn/Downloads/dartsdk-windows-x64-release/dart-sdk/lib/svg" />
+      <root url="file://$USER_HOME$/OneDrive - NTV skólinn/Downloads/dartsdk-windows-x64-release/dart-sdk/lib/typed_data" />
+      <root url="file://$USER_HOME$/OneDrive - NTV skólinn/Downloads/dartsdk-windows-x64-release/dart-sdk/lib/web_audio" />
+      <root url="file://$USER_HOME$/OneDrive - NTV skólinn/Downloads/dartsdk-windows-x64-release/dart-sdk/lib/web_gl" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

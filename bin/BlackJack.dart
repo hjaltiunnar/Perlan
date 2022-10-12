@@ -6,5 +6,5 @@ import 'package:BlackJack/lib.dart';
  */
 
 void main() {
-
+  print('Black Jack - Perlan');
 }
