@@ -10,5 +10,6 @@ void main() {
   Welcome();
   print ("Remember house always wins :) ");
   print ("HAHA");
+  print("function1");
 }
 
