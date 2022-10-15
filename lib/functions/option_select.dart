@@ -18,6 +18,20 @@ that the function will simply ask the user again to input an answer?
 
  */
 
-int OptionSelect(String statement, List<String> options){
-
+int OptionSelect(String statement, List<String> options) {
+  bool active = true;
+  while (active) {
+    try {
+      print(statement);
+      for (int i = 0; i < options.length; i++) {
+        print("[${i + 1}] ${options[i]}");
+      }
+      print("choose ");
+      int userChoice = int.parse(stdin.readLineSync());
+      return userChoice;
+    }
+    on FormatException {
+      print("Error! Please enter an integer! Try again!");
+    }
+  }
 }

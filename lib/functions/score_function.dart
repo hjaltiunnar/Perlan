@@ -24,7 +24,7 @@ gets the score 1. So if the method gets the hand [1, 1] the score would be 12
 int CalculateScore(List<int> hand){
   int score = 0;
   int ace = 0;
-  for(int i = 0;i <= hand.length-1; i++){
+  for(int i = 0; i <= hand.length-1; i++){
     if(hand[i] == 1 && ace ==0 ){
       score += 11;
       ace += 1;
@@ -36,7 +36,7 @@ int CalculateScore(List<int> hand){
     } else if(hand[i] > 10){
       score += 10;
     }
-    return score;
   }
+  return score;
 }
 

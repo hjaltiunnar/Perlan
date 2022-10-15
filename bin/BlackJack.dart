@@ -9,20 +9,29 @@ import 'package:BlackJack/functions/deal_card.dart';
 
 void main() {
   Welcome();
-
-  //CardNamer(13);
-
-  List deck = DeckOfCards();
+  List<int> deck = ShuffledDeck();
   print(deck);
-  List<int> shuffledDeck = Shuffler(deck);
-  print(shuffledDeck);
   print('_________________');
 
   List<int> playerHand = [];
-  //houseHand
+  List<int> houseHand = [];
+  int bankRoll =  BuyIn();
+  while(bankRoll > 0){
+    int bet = PlaceBet(bankRoll);
+    InitialDeal(playerHand, houseHand, deck);
+    Status(playerHand, houseHand);
+    print('_______________');
+    HitOrStay(playerHand, houseHand, deck);
 
-  //InitialDeal();
-  //Status();
+    if(!CheckIfBusted(playerHand)){
+      HousePlays(houseHand, deck);
+    }
+
+    bankRoll = CheckWinner(playerHand, houseHand, bankRoll, bet);
+    //remove and return hands;
+    ReturnHands(playerHand, houseHand, deck);
+  }
+
 
 }
 
