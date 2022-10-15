@@ -1,6 +1,7 @@
 import 'package:BlackJack/functions/functions.dart';
 import 'package:BlackJack/lib.dart';
 import 'package:BlackJack/functions/welcome.dart';
+import 'package:BlackJack/functions/deal_card.dart';
 
 /*
   Can you puzzle the methods together to form the game?
@@ -9,6 +10,11 @@ import 'package:BlackJack/functions/welcome.dart';
 void main() {
   print('Perlan');
   Welcome();
-  print(DeckOfCards());
+
+  List deck = DeckOfCards();
+  print(deck);
+  int myCard = DealCard (deck);
+  print(myCard);
+
 }
 

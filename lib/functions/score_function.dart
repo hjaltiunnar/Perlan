@@ -19,11 +19,7 @@ gets the score 1. So if the method gets the hand [1, 1] the score would be 12
   hand = [1, 1, 1, 1] -> Score 14
   hand = [11, 13] -> Score 20
   hand = [7, 1] -> Score 18
-
- */
-
+  */
 
 
-int CalculateScore(List<int> hand){
 
-}
