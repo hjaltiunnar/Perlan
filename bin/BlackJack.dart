@@ -9,6 +9,7 @@ import 'package:BlackJack/functions/deal_card.dart';
 
 void main() {
   print('Perlan');
+
   Welcome();
 
   List deck = DeckOfCards();
@@ -16,5 +17,7 @@ void main() {
   int myCard = DealCard (deck);
   print(myCard);
 
+
+  CardNamer(13);
 }
 
