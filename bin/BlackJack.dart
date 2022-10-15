@@ -6,11 +6,6 @@ import 'package:BlackJack/functions/welcome.dart';
  */
 
 void main() {
-  print('Black Jack - Perlan');
-  Welcome();
-  print ("Remember house always wins :) ");
-  print ("HAHA");
-  print("function1");
-  print('sometimes we win the house');
+  print('Perlan');
 }
 
