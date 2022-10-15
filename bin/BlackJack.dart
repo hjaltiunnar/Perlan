@@ -7,4 +7,16 @@ import 'package:BlackJack/lib.dart';
 
 void main() {
 
+  print('Perlan');
+  List deck = DeckOfCards();
+  print(deck);
+  List<int> shuffledDeck = Shuffler(deck);
+  print(shuffledDeck);
+  print('_________________');
+
+  List<int> playerHand = [];
+  //houseHand
+
+  //InitialDeal();
+  //Status();
 }
