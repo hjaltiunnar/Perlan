@@ -6,6 +6,7 @@ import 'package:BlackJack/functions/welcome.dart';
  */
 
 void main() {
-  print('Perlan');
+  print('Perlan Casino');
+  Welcome();
 }
 
