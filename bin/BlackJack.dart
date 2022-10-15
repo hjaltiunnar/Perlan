@@ -21,8 +21,13 @@ void main() {
   List<int> playerHand = [];
   //houseHand
 
+
   //InitialDeal();
   //Status();
+
+
+  CheckIfBusted([3,5]);
+  CardNamer(13);
 
 }
 
