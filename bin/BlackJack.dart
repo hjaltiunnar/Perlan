@@ -8,16 +8,21 @@ import 'package:BlackJack/functions/deal_card.dart';
  */
 
 void main() {
-  print('Perlan');
-
   Welcome();
+
+  //CardNamer(13);
 
   List deck = DeckOfCards();
   print(deck);
-  int myCard = DealCard (deck);
-  print(myCard);
+  List<int> shuffledDeck = Shuffler(deck);
+  print(shuffledDeck);
+  print('_________________');
 
+  List<int> playerHand = [];
+  //houseHand
 
-  CardNamer(13);
+  //InitialDeal();
+  //Status();
+
 }
 
