@@ -1,3 +1,5 @@
+import 'package:BlackJack/functions/draw_card.dart';
+
 import 'score_function.dart';
 
 /*
@@ -16,9 +18,24 @@ Example inputs
 [13 13 7] -> True
 [1 1 2] -> True
 ...ie use output of score function and check if busted.
+
+if ... true eða false, return true eða false
  */
 
 
 bool CheckIfBusted(List<int> hand){
+
   return CalculateScore(hand) > 21;
+
+
+/*  int result = CalculateScore(hand);
+  if (result > 21) {
+    print('true');
+    return true;
+  } else {
+    print('false');
+    return false;
+
+  }*/
+
 }

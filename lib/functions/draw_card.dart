@@ -14,6 +14,11 @@ DrawCard(hand, deck );
 print(deck); // Should print [2, 3, 4, 5, 6]
 print(hand); // Should print [1]
 
+int DealCard(List<int> deck){
+int myCard = deck.removeAt(0);
+return myCard;
+Add function
+
  */
 
 void DrawCard(List<int> hand, List<int> deck){

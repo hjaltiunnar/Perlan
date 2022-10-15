@@ -32,6 +32,5 @@ void main() {
     ReturnHands(playerHand, houseHand, deck);
   }
 
-
 }
 
