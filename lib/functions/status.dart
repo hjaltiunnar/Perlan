@@ -15,16 +15,10 @@ hand before showdown.)
 
  */
 List CardNameList(List playerHand){
-  List names = [];
-  for(int idx = 0; idx < playerHand.length; idx++){
-    names.add(CardNamer(playerHand[idx]));
-  }
-  return names;
+
 }
 
 void Status(List<int> playerHand, List<int> houseHand){
-  print(CardNameList(playerHand));
-  print('His score is ${CalculateScore(playerHand)}.');
-  print('House\'s card is ${CardNamer(houseHand[0])}.');
+
 }
 

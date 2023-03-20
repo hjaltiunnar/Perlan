@@ -25,17 +25,4 @@ if ... true eða false, return true eða false
 
 bool CheckIfBusted(List<int> hand){
 
-  return CalculateScore(hand) > 21;
-
-
-/*  int result = CalculateScore(hand);
-  if (result > 21) {
-    print('true');
-    return true;
-  } else {
-    print('false');
-    return false;
-
-  }*/
-
 }

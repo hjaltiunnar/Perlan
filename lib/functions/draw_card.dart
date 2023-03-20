@@ -22,5 +22,5 @@ Add function
  */
 
 void DrawCard(List<int> hand, List<int> deck){
-  hand.add(DealCard(deck));
+
 }

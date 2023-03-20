@@ -9,7 +9,5 @@ that has no input and simply prints a text.
 */
 
 void Welcome(){
-print ("Welcome to our Black Jack table, are you ready to win some money !");
-print( "NO REFUNDS!");
-print("Lets get started");
+
 }

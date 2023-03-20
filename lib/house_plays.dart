@@ -20,18 +20,5 @@ show the score of the house.
  */
 
 void HousePlays(List<int> houseHand, List<int> deck){
-  print('Dealer draws');
-  print('Dealer hand is ${CardNameList(houseHand)}, his Score is ${CalculateScore(houseHand)}');
-  while(CalculateScore(houseHand) < 17){
-    int dealCard = DealCard(deck);
-    houseHand.add(dealCard);
-    print('Dealer has: ${houseHand}');
-    if(CheckIfBusted(houseHand) == true){
-      print('dealer is bust, you win');
-      break;
-    } else if(CalculateScore(houseHand) >= 17){
-      print('Dealer has ${CalculateScore(houseHand)} and stays');
-      break;
-    }
-  }
+
 }
