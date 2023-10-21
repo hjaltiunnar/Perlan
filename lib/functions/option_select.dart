@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'avoidNullChecks.dart';
 /*
 Create a function called OptionSelect which takes in a list of options,
 prints them out to the user and asks for the user to select an option.
@@ -23,12 +24,8 @@ int? OptionSelect(String statement, List<String> options) {
   for(int i = 0; i < options.length; i++){
     print("${i+1}. ${options[i]}");
   }
-  int? userOption;
-  try {
-    userOption = int.tryParse(stdin.readLineSync()!) !- 1;
-  } catch (e) {
-    print("You have to type in a number");
-  }
+  int userOption;
+  userOption = nullEscapeAndConvertToInt();
 
   return userOption;
 }
