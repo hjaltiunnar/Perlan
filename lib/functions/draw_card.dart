@@ -21,6 +21,8 @@ Add function
 
  */
 
-void DrawCard(List<int> hand, List<int> deck){
 
+void DrawCard(List<int> hand, List<int> deck){
+  hand.add(deck[0]);
+  deck.removeAt(0);
 }
