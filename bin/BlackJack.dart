@@ -8,6 +8,6 @@ import 'package:BlackJack/functions/deal_card.dart';
  */
 
 void main() {
-
+  CalculateScore([1,1,1,12]);
 }
 
