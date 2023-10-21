@@ -8,9 +8,6 @@ import 'package:BlackJack/functions/deal_card.dart';
  */
 
 void main() {
-<<<<<<< Updated upstream
-
-=======
   Welcome();
   int? bankRoll = BuyIn();
   while(bankRoll! > 0) {
@@ -31,6 +28,5 @@ void main() {
     print(bankRoll);
     //returnHands()
   }
->>>>>>> Stashed changes
 }
 
