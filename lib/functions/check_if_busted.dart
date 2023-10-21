@@ -23,6 +23,6 @@ if ... true eða false, return true eða false
  */
 
 
-bool CheckIfBusted(List<int> hand){
+bool? CheckIfBusted(List<int> hand){
 
 }

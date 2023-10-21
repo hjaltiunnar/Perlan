@@ -20,8 +20,32 @@ gets the score 1. So if the method gets the hand [1, 1] the score would be 12
   hand = [11, 13] -> Score 20
   hand = [7, 1] -> Score 18
   */
+// firstAce = 13;
+// followUpAce = 1;
 
-int CalculateScore(List<int> hand){
-
+int? CalculateScore(List<int> hand){
+  int result = 0;
+  bool isAce = false;
+  hand.forEach((element) {
+    if (element == 1 && isAce == false){
+      element = 11;
+      isAce = true;
+    } else if(element == 1 && isAce == true) {
+      element = 1;
+    }
+    if (element > 10) {
+      element = 10;
+    }
+  result += element;
+  print(result);
+});
+print(hand);
 }
-
+/*while hand = firstCard {
+Ace = 11
+} else {
+Ace = 1
+}
+cardValue
+while hand =
+*/
