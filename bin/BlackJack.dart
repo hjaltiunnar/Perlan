@@ -16,7 +16,8 @@ void main() {
     List<int>?houseHand = [];
     InitialDeal(playerHand, houseHand, deck);
     int? bet = PlaceBet(bankRoll);
-    DealCard(deck);
+
+    //DealCard(deck);
     HitOrStay(playerHand, houseHand, deck);
     if (CheckIfBusted(playerHand) == true) {
       CheckWinner(playerHand, houseHand, bankRoll, bet);
@@ -26,6 +27,8 @@ void main() {
     // Status(playerHand, houseHand);
     bankRoll = CheckWinner(playerHand, houseHand, bankRoll, bet);
     print(bankRoll);
+
+    //returnHands()
   }
 }
 

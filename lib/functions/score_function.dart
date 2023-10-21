@@ -33,10 +33,9 @@ int? CalculateScore(List<int> hand){
       sum += number;
     } else if (number >= 11 && number <= 13){
       sum += 10;
-    } else if (number == 1){
-      sum += 11;
     }
   }
+  print('sum: $sum');
   return sum;
 }
 
