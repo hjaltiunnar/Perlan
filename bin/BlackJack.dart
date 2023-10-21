@@ -8,6 +8,24 @@ import 'package:BlackJack/functions/deal_card.dart';
  */
 
 void main() {
-print("test");
+  Welcome();
+  int? bankRoll = BuyIn();
+  while(bankRoll! > 0) {
+    List<int>?deck = ShuffledDeck();
+    List<int>?playerHand = [];
+    List<int>?houseHand = [];
+    InitialDeal(playerHand, houseHand, deck);
+    int? bet = PlaceBet(bankRoll);
+    DealCard(deck);
+    HitOrStay(playerHand, houseHand, deck);
+    if (CheckIfBusted(playerHand) == true) {
+      CheckWinner(playerHand, houseHand, bankRoll, bet);
+    } else {
+      HousePlays(houseHand, deck);
+    }
+    // Status(playerHand, houseHand);
+    bankRoll = CheckWinner(playerHand, houseHand, bankRoll, bet);
+    print(bankRoll);
+  }
 }
 

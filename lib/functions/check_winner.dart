@@ -21,11 +21,24 @@ int? CheckWinner(List<int> playerHand, List<int> houseHand, int currentBankRoll,
   int? playerScore = CalculateScore(playerHand);
   int? houseScore = CalculateScore(houseHand);
 
-  if ( playerScore! > houseScore!) {
+  if(CheckIfBusted(houseHand)){
+    // WIN
+    currentBankRoll += currentBet;
+  } else  {
+    if ( playerScore! > houseScore! && CheckIfBusted(playerHand) == false && CheckIfBusted(houseHand)) {
+      // Win
+      currentBankRoll += currentBet;
+    } else {
+      currentBankRoll -= currentBet;
+    }
+  }
+/*
+  if ( playerScore! > houseScore! && CheckIfBusted(playerHand) == false && CheckIfBusted(houseHand)) {
     // Win
     currentBankRoll += (currentBet * 2);
   } else {
     currentBankRoll -= currentBet;
-  }
+  }*/
+  ShowAllCards(playerHand, houseHand);
   return currentBankRoll;
 }

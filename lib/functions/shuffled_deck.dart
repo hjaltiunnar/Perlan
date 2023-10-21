@@ -8,10 +8,10 @@ Shuffler
 And when run, returns a shuffled deck of cards. No inputs, only output.
  */
 
-List<int>? ShuffledDeck(){
-  List<int>? _shuffledDeck = Shuffler(DeckOfCards());
+List<int> ShuffledDeck(){
+  List<int> _shuffledDeck = Shuffler(DeckOfCards())!;
 
   print("A deck of cards has been shuffled");
-  print('Log - shuffled-deck: ${_shuffledDeck}');
+  //print('Log - shuffled-deck: ${_shuffledDeck}');
   return _shuffledDeck;
 }
