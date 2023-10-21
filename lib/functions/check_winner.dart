@@ -17,4 +17,15 @@ import 'package:BlackJack/functions/functions.dart';
 
 int? CheckWinner(List<int> playerHand, List<int> houseHand, int currentBankRoll, int currentBet){
 
+
+  int? playerScore = CalculateScore(playerHand);
+  int? houseScore = CalculateScore(houseHand);
+
+  if ( playerScore! > houseScore!) {
+    // Win
+    currentBankRoll += (currentBet * 2);
+  } else {
+    currentBankRoll -= currentBet;
+  }
+  return currentBankRoll;
 }
