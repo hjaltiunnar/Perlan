@@ -13,11 +13,21 @@ print(hand); // Should print []
 
 
 void ReturnHand(List<int> hand, List<int> deck){
-
+  for (var item in hand) {
+    deck.add(item);
+  }
+  hand.clear();
 }
 
 void ReturnHands(List<int> playerHand, List<int> houseHand, List<int> deck){
-
+  for (var item in playerHand) {
+    deck.add(item);
+  }
+  for (var item in houseHand) {
+    deck.add(item);
+  }
+  playerHand.clear();
+  houseHand.clear();
 }
 /*
 Then create another function called ReturnHands that uses the above function
