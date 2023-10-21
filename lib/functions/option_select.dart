@@ -19,5 +19,16 @@ that the function will simply ask the user again to input an answer?
  */
 
 int? OptionSelect(String statement, List<String> options) {
+  print(statement);
+  for(int i = 0; i < options.length; i++){
+    print("${i+1}. ${options[i]}");
+  }
+  int? userOption;
+  try {
+    userOption = int.tryParse(stdin.readLineSync()!) !- 1;
+  } catch (e) {
+    print("You have to type in a number");
+  }
 
+  return userOption;
 }
