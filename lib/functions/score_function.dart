@@ -23,7 +23,7 @@ gets the score 1. So if the method gets the hand [1, 1] the score would be 12
 // firstAce = 13;
 // followUpAce = 1;
 
-int? CalculateScore(List<int> hand){
+int CalculateScore(List<int> hand){
   int result = 0;
   bool isAce = false;
   hand.forEach((element) {
