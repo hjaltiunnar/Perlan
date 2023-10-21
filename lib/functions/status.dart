@@ -14,7 +14,7 @@ on what hand he has, his score and the hand of the house.
 hand before showdown.)
 
  */
-List CardNameList(List playerHand){
+List? CardNameList(List playerHand){
 
 }
 
