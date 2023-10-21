@@ -19,10 +19,10 @@ Can you design the function such that it will ask the user again if
 he doesn't input a integer?
  */
 
-int PlaceBet(int bankRoll) {
+int? PlaceBet(int bankRoll) {
 
 }
 
-int BuyIn() {
+int? BuyIn() {
 
 }
