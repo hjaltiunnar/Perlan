@@ -9,3 +9,4 @@ pubspec.lock
 
 *.xml
 pubspec.lock
+.idea/libraries/Dart_SDK.xml
