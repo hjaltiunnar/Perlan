@@ -1,4 +1,3 @@
-
 /*
 Create a function called CalculateScore that can calculate the score of a given hand of cards.
 The score is blackjack score, so the following rules apply

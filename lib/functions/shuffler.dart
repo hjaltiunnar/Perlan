@@ -7,6 +7,8 @@ and outputs a shuffled list of integers.
 I.e, it should return a RANDOMIZED version of the list.
  */
 
-List<int> Shuffler(List<int> theList){
+List<int>? Shuffler(List<int> theList){
+  theList.shuffle();
 
+  return theList;
 }
