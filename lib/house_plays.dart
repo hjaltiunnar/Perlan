@@ -22,7 +22,7 @@ show the score of the house.
 void HousePlays(List<int> houseHand, List<int> deck){
   print('LOG: housePlays started');
   print("Before drawing score: ${CalculateScore(houseHand)}");
-  int? sumOfHouseHand = houseHand[0] + houseHand[1];
+  int? sumOfHouseHand = CalculateScore(houseHand);
   int drawnCard;
 
   while(sumOfHouseHand! < 17){
