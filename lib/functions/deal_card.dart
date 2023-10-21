@@ -16,6 +16,6 @@ int DealCard(List<int> deck){
   //int cardNumber = 0;
 
   int cardNumber = deck[0];
-  deck.remove(0);
+  deck.removeAt(0);
   return cardNumber;
 }

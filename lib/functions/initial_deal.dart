@@ -1,3 +1,5 @@
+import 'package:BlackJack/functions/deal_card.dart';
+
 import 'draw_card.dart';
 
 /*
@@ -22,6 +24,10 @@ print(dealerHand); // Should print [2, 4]
 
  */
 
-void InitialDeal(List<int> playerHand, List<int> houseHand, List<int> deck){
 
+void InitialDeal(List<int> playerHand, List<int> houseHand, List<int> deck){
+  DrawCard(playerHand, deck);
+  DrawCard(houseHand, deck);
+  DrawCard(playerHand, deck);
+  DrawCard(houseHand, deck);
 }
