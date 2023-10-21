@@ -28,17 +28,12 @@ int? CheckWinner(List<int> playerHand, List<int> houseHand, int currentBankRoll,
     if ( playerScore! > houseScore! && CheckIfBusted(playerHand) == false && CheckIfBusted(houseHand)) {
       // Win
       currentBankRoll += currentBet;
+      print("You Win!");
     } else {
       currentBankRoll -= currentBet;
+      print("You Lose!");
     }
   }
-/*
-  if ( playerScore! > houseScore! && CheckIfBusted(playerHand) == false && CheckIfBusted(houseHand)) {
-    // Win
-    currentBankRoll += (currentBet * 2);
-  } else {
-    currentBankRoll -= currentBet;
-  }*/
   ShowAllCards(playerHand, houseHand);
   return currentBankRoll;
 }
