@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'avoidNullChecks.dart';
 /*
 Create a function called OptionSelect which takes in a list of options,
 prints them out to the user and asks for the user to select an option.
@@ -19,5 +20,12 @@ that the function will simply ask the user again to input an answer?
  */
 
 int? OptionSelect(String statement, List<String> options) {
+  print(statement);
+  for(int i = 0; i < options.length; i++){
+    print("${i+1}. ${options[i]}");
+  }
+  int userOption;
+  userOption = nullEscapeAndConvertToInt();
 
+  return userOption;
 }
