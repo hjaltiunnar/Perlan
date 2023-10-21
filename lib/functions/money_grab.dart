@@ -20,32 +20,39 @@ he doesn't input a integer?
  */
 
 
-int? betLogic(int bankRoll){
-  int amount = 0;
+int getInteger(){
+  int number = 0;
   try {
-  amount = int.tryParse(stdin.readLineSync()!) !- 0;
+  number = int.tryParse(stdin.readLineSync()!) !- 0;
   } catch (e){
     print("You have to input a number!");
-    betLogic(bankRoll);
+    getInteger();
   }
-  if (amount > bankRoll){
-    print("You can't bet higher than the bankroll, that's currently $bankRoll");
-    betLogic(bankRoll);
+  return number;
+}
+
+int PlaceBet(int bankRoll) {
+  if (bankRoll == 0){
+    print("Error: no available funds.");
+    BuyIn();
+  }
+  print("Give me an amount you want to bet");
+  int amount = getInteger();
+    if (amount > bankRoll){
+    print("You only have $bankRoll to play with! Pick a lower number.");
+    PlaceBet(bankRoll);
+    return amount;
   } else if (amount == 0) {
     print("You can't bet 0! Try again.");
-    betLogic(bankRoll);
+    PlaceBet(bankRoll);
+    return amount;
     } else {
-      print(amount);
     return amount;
   }
 }
 
-int? PlaceBet(int bankRoll) {
-  print("Give me an amount you want to bet");
-  betLogic(bankRoll);
-}
-
-int? BuyIn(int bankRoll) {
+int BuyIn() {
   print("How large is your buy in?");
-  betLogic(bankRoll);
+  int amount = getInteger();
+  return amount;
 }
