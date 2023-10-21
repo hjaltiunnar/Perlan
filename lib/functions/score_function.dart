@@ -27,25 +27,16 @@ int? CalculateScore(List<int> hand){
   int result = 0;
   bool isAce = false;
   hand.forEach((element) {
+    if (element > 10) {
+      element = 10;
+    }
     if (element == 1 && isAce == false){
       element = 11;
       isAce = true;
     } else if(element == 1 && isAce == true) {
       element = 1;
     }
-    if (element > 10) {
-      element = 10;
-    }
   result += element;
-  print(result);
 });
-print(hand);
+  return result;
 }
-/*while hand = firstCard {
-Ace = 11
-} else {
-Ace = 1
-}
-cardValue
-while hand =
-*/
