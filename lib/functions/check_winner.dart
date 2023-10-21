@@ -15,6 +15,6 @@ of the user, which should have decreased/increased based on if he won or not.
 
 import 'package:BlackJack/functions/functions.dart';
 
-int CheckWinner(List<int> playerHand, List<int> houseHand, int currentBankRoll, int currentBet){
+int? CheckWinner(List<int> playerHand, List<int> houseHand, int currentBankRoll, int currentBet){
 
 }
