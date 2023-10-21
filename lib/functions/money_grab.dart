@@ -34,7 +34,7 @@ int getInteger(){
 int PlaceBet(int bankRoll) {
   if (bankRoll == 0){
     print("Error: no available funds.");
-    return 0;
+    BuyIn();
   }
   print("Give me an amount you want to bet");
   int amount = getInteger();
@@ -47,7 +47,6 @@ int PlaceBet(int bankRoll) {
     PlaceBet(bankRoll);
     return amount;
     } else {
-      print(amount);
     return amount;
   }
 }
