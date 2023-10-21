@@ -21,10 +21,6 @@ gets the score 1. So if the method gets the hand [1, 1] the score would be 12
   hand = [7, 1] -> Score 18
   */
 
-<<<<<<< Updated upstream
-int CalculateScore(List<int> hand){
-
-=======
 int? CalculateScore(List<int> hand){
   int sum = 0;
   bool checkIfAce = false;
@@ -42,6 +38,5 @@ int? CalculateScore(List<int> hand){
   }
   print('sum: $sum');
   return sum;
->>>>>>> Stashed changes
 }
 
