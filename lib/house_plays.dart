@@ -20,5 +20,16 @@ show the score of the house.
  */
 
 void HousePlays(List<int> houseHand, List<int> deck){
+  print('LOG: housePlays started');
+  int sumOfHouseHand = houseHand[0];
+  int drawnCard;
 
+  do {
+    print("Score of dealer: $sumOfHouseHand");
+    drawnCard = DealCard(deck);
+    houseHand.add(drawnCard);
+    print("The dealer drew $drawnCard");
+  } while (sumOfHouseHand < 17);
+
+  print("LOG: housePlays ended");
 }
