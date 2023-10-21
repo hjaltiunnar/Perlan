@@ -25,7 +25,6 @@ int nullEscapeAndConvertToInt() {
   int? parsedNumber;
 
   while (parsedNumber == null) {
-    print("Please enter a valid number: ");
     number = stdin.readLineSync();
 
     if (number != null) {
