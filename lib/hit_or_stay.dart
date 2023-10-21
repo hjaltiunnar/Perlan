@@ -30,15 +30,22 @@ void HitOrStay(List<int> playerHand, List<int> houseHand, List<int> deck){
   int? userRequest = null;
   int? drawnCard = null;
 
-  while(userRequest != 2 || CheckIfBusted(playerHand) == false){
+  while(userRequest != 3 || CheckIfBusted(playerHand) == false){
+    Status(playerHand, houseHand);
     userRequest = OptionSelect('Pick an option:', options);
-    if(userRequest == 0){                   // Hit
+    if(userRequest == 1){                   // Hit
       drawnCard = DealCard(deck);
       print("You have drawn: $drawnCard");
-    } else if(userRequest == 1 ){  
+      playerHand.add(drawnCard);
+      if(CheckIfBusted(playerHand)){
+        print("You busted");
+        Status(playerHand, houseHand);
+        return;
+      }
+    } else if(userRequest == 2 ){
       print("You have selected Stay");         // Stay
       return;
-    } else if(userRequest == 2){            // Quit
+    } else if(userRequest == 3){            // Quit
       return;
     } else {
       print("Not a valid option.");
