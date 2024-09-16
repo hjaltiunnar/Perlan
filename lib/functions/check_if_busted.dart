@@ -22,7 +22,10 @@ Example inputs
 if ... true eða false, return true eða false
  */
 
-
 bool CheckIfBusted(List<int> hand){
-
+  int? sumOfCards = CalculateScore(hand);
+  if(sumOfCards! > 21){
+    return true;
+  }
+  return false;
 }

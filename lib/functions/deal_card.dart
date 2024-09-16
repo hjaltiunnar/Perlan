@@ -13,5 +13,9 @@ print(deck); // Should print [2, 3, 4]
  */
 
 int DealCard(List<int> deck){
+  //int cardNumber = 0;
 
+  int cardNumber = deck[0];
+  deck.removeAt(0);
+  return cardNumber;
 }
